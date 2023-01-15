@@ -31,11 +31,10 @@ public class Main {
             while ((output = br.readLine()) != null) {
                 json = new JSONObject(output);
                 System.out.println(json.toString(5));
-
             }
             conn.disconnect();
         } catch (Exception e) {
-            System.out.println("Exception in NetClientGet:- " + e);
+            System.out.println("Exception " + e);
         }
     }
 }
